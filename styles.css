@@ -1,0 +1,398 @@
+/* Reset some default styles and set background image */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #000000;
+  background-image: url(bgi1.jpeg);
+}
+
+/* Center the content and set max-width for container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  /* Removed padding: -5; as it's not a valid property */
+}
+
+/* Style for the homepage section */
+#home {
+  /* Background image properties */
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+/* Increase font size for homepage text */
+#home h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Increase font size for homepage paragraph text */
+#home p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Style for buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgba(128, 128, 128, 0.373);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Style for circular image */
+.circle-image {
+  display: block;
+  margin: 0 auto 2% auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* Social media links styles */
+.social-media {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media a {
+  display: block;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.social-media img:hover {
+  opacity: 1;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: gray;
+}
+
+/* Add space between sections */
+section {
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+/* Style for project boxes */
+.project {
+  width: calc(100% - 1rem);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Project box hover effect */
+.project:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Style for project images */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Style for project headings and descriptions */
+.project h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.project p {
+  font-size: 1.2rem;
+}
+
+/* Image grid styles */
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.column {
+  flex: 1;
+}
+
+/* Style for images in the image grid */
+.image-grid img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid rgba(255, 255, 255, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+
+/* Image hover effect */
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the information section */
+#information {
+  background-color: #3333333c;
+  color: white;
+  padding: 4rem 0;
+}
+
+/* Info content layout styles */
+.info-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Style for project navigation buttons */
+.project-navigation {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.project-navigation .btn {
+  padding: 0.5rem 1rem;
+  background-color: rgba(128, 128, 128, 0.373);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 1.2rem;
+}
+
+/* Button hover effect in project navigation */
+.project-navigation .btn:hover {
+  background-color: #333;
+}
+
+/* Styles for contact information sections */
+.contact-details,
+.social-media-links,
+.additional-info {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-details h3,
+.social-media-links h3,
+.additional-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Social media links styles */
+.social-media-links a {
+  display: block;
+  margin: 0.5rem 0;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media-links a:hover {
+  color: gray;
+}
+
+/* Additional information paragraph styles */
+.additional-info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Style for the under-construction section */
+#under-construction {
+  background-color: #333;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Styles for under-construction heading and paragraph */
+#under-construction h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#under-construction p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Styles for the contact section */
+#contact {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 4rem 0;
+}
+
+/* Styles for contact section heading */
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the contact form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for form labels */
+#contact label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Styles for form inputs and textarea */
+#contact input,
+#contact textarea {
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+/* Styles for the textarea */
+#contact textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Styles for the submit button */
+#contact button {
+  padding: 0.5rem 1rem;
+  background-color: rgba(128, 128, 128, 0.498);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.2rem;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+/* Button hover effect for the submit button */
+#contact button:hover {
+  background-color: #333;
+}
+
+/* Styles for form elements */
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #33333300;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+/* Styles for the form container */
+form {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #33333370;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/* Styles for the form submit button */
+form button {
+  background-color: gray;
+  cursor: pointer;
+}
